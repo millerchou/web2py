@@ -680,3 +680,4 @@ def manage():
     kwargs.update(**smartgrid_args.get(table._tablename, {}))
     grid = SQLFORM.smartgrid(table, args=request.args[:2], formname=formname, **kwargs)
     return grid
+
